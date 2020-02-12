@@ -10,8 +10,12 @@ def summon_captain_planet(array) # code an argument here
   new_array = array.map{|word| "#{word.capitalize}!"}
 end
 
-def long_planeteer_calls# code an argument here
+def long_planeteer_calls(array) # code an argument here
   # Your code here
+  new_array = []
+  new_array = array.select{|word| word.length > 4}
+  result = new_array.empty? ? true: false
+  !result
 end
 
 def find_the_cheese# code an argument here
